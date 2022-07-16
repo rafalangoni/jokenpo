@@ -1,0 +1,16 @@
+body{
+    background-color: #CEE5D0;
+}
+
+.principal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.principal__paragrafo{
+    margin-top: 2rem;
+}
