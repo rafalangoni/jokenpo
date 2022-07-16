@@ -10,13 +10,15 @@
 </head>
 <body>
     <div class="principal">
-        <p>Escolha do jogador:</p>
-        <button type="button" class="btn btn-primary">Pedra</button>
-        <button type="button" class="btn btn-primary">Tesoura</button>
-        <button type="button" class="btn btn-primary">Papel</button>
-        <p class="principal__paragrafo">Escolha do computador:</p>
-        <p>...</p>
-        <h2>VENCEDOR: <span>...</span></h2>
+        <h2>Escolha do jogador:</h2>
+        <button type="button" class="btn btn-primary" data-tipo="pedra">Pedra</button>
+        <button type="button" class="btn btn-primary" data-tipo="tesoura">Tesoura</button>
+        <button type="button" class="btn btn-primary" data-tipo="papel">Papel</button>
+        <div class="principal__computador">
+            <h2>Escolha do computador:</h2>
+            <p class="principal__paragrafo">...</p>
+            <h3>VENCEDOR: <span>...</span></h3>
+        </div>
     </div>
 
     <script src="app.js"></script>

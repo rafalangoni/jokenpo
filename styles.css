@@ -2,6 +2,10 @@ body{
     background-color: #CEE5D0;
 }
 
+p{
+    font-weight: 700;
+}
+
 .principal{
     align-items: center;
     display: flex;
@@ -11,6 +15,11 @@ body{
     margin: 0 auto;
 }
 
-.principal__paragrafo{
+.principal__computador{
+    /* display: none; */
     margin-top: 2rem;
+}
+
+.principal__paragrafo{
+    text-align: center;
 }
