@@ -21,11 +21,36 @@ pedra.addEventListener("click", () => {
     }
 })
 
-papel.addEventListener("click", (evento) => {
-    comparaEscolha(evento.target.textContent);
+papel.addEventListener("click", () => {
+    vencedor.textContent = '';
+    escolhaComputador.textContent = ''
+    let valorDoComputador = Math.floor(Math.random() * computador.length);
+    if (valorDoComputador == 1) {
+        vencedor.textContent = ' Você venceu!';
+        escolhaComputador.textContent = ' Pedra';
+    } else if (valorDoComputador == 0) {
+        vencedor.textContent = ' Empate!';
+        escolhaComputador.textContent = ' Papel';
+    }else{
+        vencedor.textContent = ' Computador venceu!';
+        escolhaComputador.textContent = ' Tesoura';
+    }
 })
-tesoura.addEventListener("click", (evento) => {
-    comparaEscolha(evento.target.textContent);
+
+tesoura.addEventListener("click", () => {
+    vencedor.textContent = '';
+    escolhaComputador.textContent = ''
+    let valorDoComputador = Math.floor(Math.random() * computador.length);
+    if (valorDoComputador == 1) {
+        vencedor.textContent = ' Computador venceu!';
+        escolhaComputador.textContent = ' Pedra';
+    } else if (valorDoComputador == 0) {
+        vencedor.textContent = ' Você enceu!';
+        escolhaComputador.textContent = ' Papel';
+    }else{
+        vencedor.textContent = ' Empate!';
+        escolhaComputador.textContent = ' Tesoura';
+    }
 })
 
 /**
