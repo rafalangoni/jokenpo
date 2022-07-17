@@ -9,17 +9,25 @@
     <title>JoKenPo</title>
 </head>
 <body>
+
     <div class="principal">
         <h2>Escolha do jogador:</h2>
-        <button type="button" class="btn btn-primary" data-tipo="pedra">Pedra</button>
+        <!-- <button type="button" class="btn btn-primary" data-tipo="pedra">Pedra</button>
         <button type="button" class="btn btn-primary" data-tipo="tesoura">Tesoura</button>
-        <button type="button" class="btn btn-primary" data-tipo="papel">Papel</button>
+        <button type="button" class="btn btn-primary" data-tipo="papel">Papel</button> -->
+        <img src="pedra.PNG" data-tipo="pedra">
+        <img src="papel.PNG" data-tipo="papel">
+        <img src="tesoura.PNG" data-tipo="tesoura">
         <div class="principal__computador">
             <h2>Escolha do computador:<span class="principal__computador-escolha"></span></h2>
             <h3>VENCEDOR: <span class="principal__vencedor"></span></h3>
         </div>
     </div>
-
+    <div class="audio">
+        <audio controls autoplay loop>
+            <source src="alex_kidd_theme.mp3">
+        </audio>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

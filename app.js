@@ -52,8 +52,3 @@ tesoura.addEventListener("click", () => {
         escolhaComputador.textContent = ' Tesoura';
     }
 })
-
-/**
- * 1) fazer uma função para definir a escolha aleatória do computador
- * 2) na função compara escollha, usar a função da escolha aleatória para saber quem ganhou
- */
